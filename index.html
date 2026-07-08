@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Newsletters</title>
+<style>
+  :root { color-scheme: light dark; }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; padding: 48px 20px; font-family: -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+    background: #f8fafc; color: #0f172a; line-height: 1.5;
+  }
+  .wrap { max-width: 680px; margin: 0 auto; }
+  h1 { font-size: 2rem; margin: 0 0 6px; }
+  .sub { color: #64748b; margin: 0 0 32px; }
+  ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 14px; }
+  .card a {
+    display: flex; flex-direction: column; gap: 4px; text-decoration: none;
+    background: #fff; border: 1px solid #e2e8f0; border-radius: 12px; padding: 18px 22px;
+    transition: border-color .15s, transform .15s, box-shadow .15s; color: inherit;
+  }
+  .card a:hover { border-color: #2563eb; transform: translateY(-2px); box-shadow: 0 6px 20px rgba(37,99,235,.10); }
+  .card-title { font-size: 1.12rem; font-weight: 650; }
+  .card-date { font-size: .85rem; color: #64748b; }
+  .empty { color: #94a3b8; padding: 22px; text-align: center; }
+  footer { margin-top: 40px; font-size: .8rem; color: #94a3b8; text-align: center; }
+  @media (prefers-color-scheme: dark) {
+    body { background: #0b1220; color: #e2e8f0; }
+    .card a { background: #131c2e; border-color: #24304a; }
+    .sub, .card-date { color: #94a3b8; }
+  }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <h1>Newsletters</h1>
+    <p class="sub">Published issues. Click any issue to read it.</p>
+    <ul>
+      <li class="card">
+        <a href="newsletter_20260606.html">
+          <span class="card-title">Good Jobs, Bad Day: SPX Falls ~2.5% on Hot Employment Data</span>
+          <span class="card-date">June 6, 2026</span>
+        </a>
+      </li>
+    </ul>
+    <footer>Published with the WAT newsletter pipeline.</footer>
+  </div>
+</body>
+</html>
